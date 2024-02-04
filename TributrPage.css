@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Manrope&family=Offside&family=Poppins&display=swap");
+
+:root {
+  --dark-blue-color: #0a2747;
+  --light-blie-color: #2881cf;
+  --white-color: #ffffff;
+  --dark-gray-color: #8181816b;
+  --light-gray-color: #c0c0c0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--dark-blue-color);
+  font-family: "Poppins", serif;
+}
+
+.container {
+  width: 80%;
+  margin: 5rem auto;
+  background-color: var(--dark-gray-color);
+  padding: 2.5rem 4rem;
+  border-radius: 20px;
+}
+
+.header {
+  margin-bottom: 2rem;
+  color: var(--white-color);
+}
+
+.h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+#h2 {
+  opacity: 0.8;
+  font-style: italic;
+  font-size: 1.5rem;
+}
+
+.image {
+  border: thin var(--light-gray-color) solid;
+  display: flex;
+  flex-flow: column;
+  padding: 5px;
+  max-width: 100%;
+}
+
+.figCaption {
+  background-color: var(--light-blie-color);
+  color: var(--white-color);
+  font: italic smaller sans-serif;
+  padding: 3px;
+  text-align: center;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+.section {
+  color: var(--white-color);
+}
+
+.section > h2 {
+  margin-bottom: 0.8rem;
+}
+
+.li:first-child {
+  padding-top: 0;
+}
+
+.li {
+  font-size: 1rem;
+  padding: 30px 50px;
+  list-style: none;
+  border-left: 2px solid var(--light-blie-color);
+  position: relative;
+}
+
+.li::before {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: var(--light-blie-color);
+  left: -9px;
+}
+
+strong {
+  margin-right: 5px;
+}
+
+.blockquote {
+  width: 80%;
+  margin: auto;
+  background-color: var(--light-blie-color);
+  border-radius: 20px;
+  padding: 1.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 1rem;
+}
+
+#quote {
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+#said-by {
+  text-align: right;
+}
+
+.p {
+  width: 100%;
+}
+
+.lastSection {
+  text-align: center;
+  color: var(--white-color);
+}
+
+.lastSection > a {
+  color: var(--light-blie-color);
+  font-weight: 800;
+  margin-left: 5px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  color: var(--white-color);
+  background-color: var(--light-blie-color);
+  height: 3rem;
+  align-items: center;
+}
+
+#heart {
+  height: 2rem;
+  width: 2rem   ;
+  color: rgba(180, 22, 25, 1);
+}
+
+.name{
+    color: var(--white-color);
+}
+
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 90%;
+    padding: 1.5rem;
+  }
+
+  .h1 {
+    font-size: 2.5rem;
+  }
+  #h2 {
+    font-size: 1.2rem;
+  }
+  .blockquote {
+    width: 100%;
+  }
+
+  #quote {
+    font-size: 1.1rem;
+  }
+
+  #said-by {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container {
+    padding: 1.5rem 1rem;
+  }
+
+  .h1 {
+    font-size: 2rem;
+  }
+  #h2 {
+    font-size: 1rem;
+  }
+
+  .li {
+    padding: 15px 25px;
+  }
+}
